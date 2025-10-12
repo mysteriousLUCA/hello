@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Focus - Rishi Rajendra Gandhi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .focus-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .focus-project {
+            background-color: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .focus-project h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .focus-project h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent-color), transparent);
+        }
+        
+        .keywords-container {
+            margin-top: 1.5rem;
+        }
+        
+        .keywords-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+        
+        .keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .keyword {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .keyword:hover {
+            background-color: var(--accent-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .keyword-web {
+            width: 100%;
+            height: 400px;
+            margin: 2rem 0;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link i {
+            margin-right: 0.5rem;
+        }
+        
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+        
+        .progress-container {
+            margin: 1.5rem 0;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-color), var(--science-blue));
+            border-radius: 4px;
+            transition: width 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rishi Rajendra Gandhi</h1>
+        <p>Astrobiologist • Marine Microbiologist • Ex-iGEMer • Analog Astronaut</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="presentation.html">Presentations</a>
+        <a href="Project.html">Projects</a>
+        <a href="Publication.html">Publications</a>
+        <a href="Blog.html">Blog</a>
+        <a href="research-interests.html">Research</a>
+        <a href="current-focus.html" class="active">Current Focus</a>
+    </nav>
+
+    <main>
+        <div class="focus-container">
+            <h2>Current Focus</h2>
+            
+            <div class="focus-project">
+                <h3>Machine Learning for Astrobiology Data Analysis</h3>
+                <p>I'm currently developing advanced machine learning algorithms specifically designed for analyzing complex astrobiology datasets. This work aims to make sophisticated data analysis techniques more accessible to researchers in the field who may not have extensive computational backgrounds.</p>
+                
+                <div class="progress-container">
+                    <div class="keywords-title">Project Progress:</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                    <p><small>75% complete - Currently in testing phase</small></p>
+                </div>
+                
+                <p>The project involves creating user-friendly interfaces and automated pipelines that can process spectroscopic data, genomic sequences, and environmental measurements to identify patterns that might indicate biological activity or potential habitability.</p>
+                
+                <div class="keywords-container">
+                    <div class="keywords-title">Keywords:</div>
+                    <div class="keywords">
+                        <span class="keyword">Machine Learning</span>
+                        <span class="keyword">Data Analysis</span>
+                        <span class="keyword">Neural Networks</span>
+                        <span class="keyword">Spectroscopy</span>
+                        <span class="keyword">Genomics</span>
+                        <span class="keyword">User Interface</span>
+                        <span class="keyword">Automation</span>
+                        <span class="keyword">Pattern Recognition</span>
+                    </div>
+                </div>
+                
+                <div class="keyword-web" id="web1"></div>
+                
+                <a href="projects/machine-learning-project.html" class="info-link">View Detailed Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="focus-project">
+                <h3>Analog Mars Mission Preparation</h3>
+                <p>As an analog astronaut, I'm preparing for an upcoming simulated Mars mission that will test various protocols for sample collection, analysis, and containment in a Mars-like environment. This work is crucial for developing procedures that future Mars missions might employ.</p>
+                
+                <div class="progress-container">
+                    <div class="keywords-title">Project Progress:</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 40%;"></div>
+                    </div>
+                    <p><small>40% complete - Equipment preparation phase</small></p>
+                </div>
+                
+                <p>The mission will focus on testing new portable instruments for in-situ analysis of samples, communication protocols under time-delay conditions, and psychological aspects of long-duration missions in isolated environments.</p>
+                
+                <div class="keywords-container">
+                    <div class="keywords-title">Keywords:</div>
+                    <div class="keywords">
+                        <span class="keyword">Analog Astronaut</span>
+                        <span class="keyword">Mars Simulation</span>
+                        <span class="keyword">Sample Analysis</span>
+                        <span class="keyword">Portable Instruments</span>
+                        <span class="keyword">Communication Protocols</span>
+                        <span class="keyword">Isolation Studies</span>
+                        <span class="keyword">Mission Planning</span>
+                    </div>
+                </div>
+                
+                <div class="keyword-web" id="web2"></div>
+            </div>
+            
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About</h4>
+                <p>Rishi Rajendra Gandhi is an Astrobiologist and Marine Microbiologist passionate about exploring life in extreme environments, from deep-sea ecosystems to potential extraterrestrial habitats.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Research Areas</h4>
+                <ul>
+                    <li>Astrobiology & Extremophiles</li>
+                    <li>Marine Microbiology</li>
+                    <li>Space Analog Research</li>
+                    <li>Synthetic Biology</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: rishi.gandhi@research.edu</p>
+                <p>Phone: +91-XXX-XXX-XXXX</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Rishi Rajendra Gandhi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- D3.js for Keyword Web Visualization -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        // Function to create keyword web visualization
+        function createKeywordWeb(containerId, keywords) {
+            const container = document.getElementById(containerId);
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+            const centerX = width / 2;
+            const centerY = height / 2;
+            
+            // Create SVG
+            const svg = d3.select(`#${containerId}`)
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height);
+                
+            // Create central node
+            const centralNode = {
+                id: "central",
+                x: centerX,
+                y: centerY,
+                radius: 40,
+                fixed: true
+            };
+            
+            // Create keyword nodes
+            const nodes = [centralNode];
+            const links = [];
+            
+            // Position keywords in a circle around the central node
+            const radius = Math.min(width, height) * 0.35;
+            keywords.forEach((keyword, i) => {
+                const angle = (i / keywords.length) * 2 * Math.PI;
+                const x = centerX + radius * Math.cos(angle);
+                const y = centerY + radius * Math.sin(angle);
+                
+                const node = {
+                    id: keyword,
+                    x: x,
+                    y: y,
+                    radius: 30 + keyword.length * 1.5,
+                    keyword: keyword
+                };
+                
+                nodes.push(node);
+                links.push({
+                    source: 0,
+                    target: i + 1,
+                    value: 1
+                });
+                
+                // Add some connections between keywords
+                if (i > 0 && Math.random() > 0.5) {
+                    const targetIndex = Math.floor(Math.random() * i);
+                    links.push({
+                        source: i + 1,
+                        target: targetIndex + 1,
+                        value: 0.5
+                    });
+                }
+            });
+            
+            // Create links
+            const link = svg.selectAll(".link")
+                .data(links)
+                .enter()
+                .append("line")
+                .attr("class", "link")
+                .attr("x1", d => nodes[d.source].x)
+                .attr("y1", d => nodes[d.source].y)
+                .attr("x2", d => nodes[d.target].x)
+                .attr("y2", d => nodes[d.target].y)
+                .style("stroke", "rgba(255, 255, 255, 0.2)")
+                .style("stroke-width", d => d.value * 2);
+            
+            // Create central node
+            svg.append("circle")
+                .attr("cx", centralNode.x)
+                .attr("cy", centralNode.y)
+                .attr("r", centralNode.radius)
+                .style("fill", "rgba(120, 99, 230, 0.8)")
+                .style("stroke", "white")
+                .style("stroke-width", 2);
+                
+            // Add text to central node
+            svg.append("text")
+                .attr("x", centralNode.x)
+                .attr("y", centralNode.y + 5)
+                .attr("text-anchor", "middle")
+                .style("fill", "white")
+                .style("font-size", "12px")
+                .style("font-weight", "bold")
+                .text(containerId === "web1" ? "ML for Astrobiology" : "Mars Mission");
+            
+            // Create keyword nodes
+            const nodeGroups = svg.selectAll(".node")
+                .data(nodes.slice(1))
+                .enter()
+                .append("g")
+                .attr("class", "node")
+                .attr("transform", d => `translate(${d.x}, ${d.y})`);
+            
+            nodeGroups.append("circle")
+                .attr("r", d => Math.min(d.radius, 40))
+                .style("fill", "rgba(255, 255, 255, 0.1)")
+                .style("stroke", "rgba(255, 255, 255, 0.5)")
+                .style("stroke-width", 1);
+                
+            nodeGroups.append("text")
+                .attr("text-anchor", "middle")
+                .attr("dy", 5)
+                .style("fill", "white")
+                .style("font-size", "10px")
+                .text(d => d.keyword.length > 12 ? d.keyword.substring(0, 10) + "..." : d.keyword);
+                
+            // Add hover effects
+            nodeGroups.on("mouseover", function(event, d) {
+                d3.select(this).select("circle")
+                    .transition()
+                    .duration(300)
+                    .style("fill", "rgba(120, 99, 230, 0.6)")
+                    .style("stroke", "white")
+                    .style("stroke-width", 2);
+                    
+                // Highlight connections
+                link.style("stroke", function(l) {
+                    if (nodes.indexOf(d) === l.source || nodes.indexOf(d) === l.target) {
+                        return "rgba(255, 255, 255, 0.8)";
+                    } else {
+                        return "rgba(255, 255, 255, 0.1)";
+                    }
+                });
+            })
+            .on("mouseout", function() {
+                d3.select(this).select("circle")
+                    .transition()
+                    .duration(300)
+                    .style("fill", "rgba(255, 255, 255, 0.1)")
+                    .style("stroke", "rgba(255, 255, 255, 0.5)")
+                    .style("stroke-width", 1);
+                    
+                // Reset connections
+                link.style("stroke", "rgba(255, 255, 255, 0.2)");
+            });
+            
+            // Add simple animation
+            function animate() {
+                nodeGroups.select("circle")
+                    .transition()
+                    .duration(2000 + Math.random() * 1000)
+                    .attr("r", d => Math.min(d.radius, 40) * (0.9 + Math.random() * 0.2))
+                    .on("end", animate);
+            }
+            
+            animate();
+        }
+        
+        // Initialize visualizations when page loads
+        window.addEventListener('load', function() {
+            createKeywordWeb('web1', [
+                'Machine Learning', 'Data Analysis', 'Neural Networks', 
+                'Spectroscopy', 'Genomics', 'User Interface', 
+                'Automation', 'Pattern Recognition'
+            ]);
+            
+            createKeywordWeb('web2', [
+                'Analog Astronaut', 'Mars Simulation', 'Sample Analysis', 
+                'Portable Instruments', 'Communication Protocols', 
+                'Isolation Studies', 'Mission Planning'
+            ]);
+            
+            // Animate progress bars
+            document.querySelectorAll('.progress-fill').forEach(fill => {
+                const width = fill.style.width;
+                fill.style.width = '0';
+                setTimeout(() => {
+                    fill.style.width = width;
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>
